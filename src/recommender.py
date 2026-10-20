@@ -9,7 +9,7 @@ class MovieRecommender:
             self.movies = pickle.load(open(movies_path, 'rb'))
             self.similarity = pickle.load(open(similarity_path, 'rb'))
         except FileNotFoundError:
-            print(" Model files not found! Please run train.py first.")
+            print(" Model files not found! Please run train.py 1st.")
             self.movies = None
             self.similarity = None
 
